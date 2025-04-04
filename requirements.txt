@@ -1,7 +1,7 @@
 Librerias de python necesarias:
   *undetected_chromedriver
   *selenium
-  *setuptools
+  *setuptools (En caso de que la libreria *pickle* no te funcione)
 
 Debes descargar el chromedriver y colocarlo en la misma carpeta donde se encuentra el archivo .py que se va a ejecutar
   https://googlechromelabs.github.io/chrome-for-testing/
