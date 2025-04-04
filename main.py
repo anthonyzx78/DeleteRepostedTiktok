@@ -53,8 +53,9 @@ for cookie in cookies:
     except Exception as e:
         print(e)
 
-driver.get("https://www.tiktok.com/@rreyeszx")
+driver.get("https://www.tiktok.com")
 
+click(profileButton)
 click(profileRepostsButton)
 click(firstRepostedVideo)
 
@@ -68,9 +69,9 @@ while True:
     with open("contador.txt", "w") as file:
         file.write(str(contador))
     print(f"Se han eliminado{contador} videos reposteados")
-    time.sleep(0.1)
+    time.sleep(1)
     outsideRepostedVideo.send_keys(Keys.ARROW_DOWN)
-    time.sleep(0.1)
+    time.sleep(1)
 
 # pickle.dump(cookies, open("cookie.pkl", "wb"))
 
